@@ -22,8 +22,8 @@ st.write(
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/content/Nassau Candy Distributor.csv")
-
+    df = pd.read_csv("Nassau Candy Distributor (1).csv")
+    
     df["Order Date"] = pd.to_datetime(df["Order Date"], format="%d-%m-%Y", errors="coerce")
     df["Ship Date"] = pd.to_datetime(df["Ship Date"], format="%d-%m-%Y", errors="coerce")
 
